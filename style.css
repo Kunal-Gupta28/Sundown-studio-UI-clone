@@ -1,0 +1,492 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Neuehaasdisplay roman", sans-serif;
+}
+html,body{
+    height: 100%;
+}
+main{
+    position: relative;
+    z-index: 2;
+}
+#page1,#page2,#page3,#page4,#page5,#page6{
+    padding: 40px;
+    background-color: #EFEAE3;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav>div{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+nav  div span{
+    height: 50px;
+    width: 110px;
+    font-size: 1.125rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    border: 1px solid rgb(164, 162, 162);
+    border-radius: 25px;
+    text-decoration: none;
+    overflow: hidden;
+}
+nav div span::after{
+    content: " ";
+    height: 130%;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    bottom: -130%;
+    background-color: black;
+    border-radius: 100%;
+}
+nav div span:hover{
+    cursor: pointer;
+    color:#EFEAE3;
+}
+nav div span:hover::after{
+    bottom: 0%;
+    border-radius: 0;
+    transition: all ease 0.5s;
+}
+#container1{
+    height: 65vh;
+    width: 95vw;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: 1px solid rgb(164, 162, 162);
+}
+#left-part{
+    width: 27vw;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.7rem;
+}
+#right-part{
+    width: 40vw;
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 8rem;
+    text-align: right;
+}
+#ball1{
+    margin: 30px  20px;
+    top: 50vh;
+    right: -5vw;
+    animation: cloud1 20s alternate infinite;
+}
+#ball2{
+    margin: 10px  40px;
+    top: 60vh;
+    right: 9vw;
+    animation: cloud2 20s alternate infinite;
+}
+#ball3{
+    margin: 30px  10px;
+    top: 55vh;
+    right: 0vw;
+    animation: cloud3 20s alternate infinite;
+}
+#ball4{
+    margin: 20px  20px;
+    top: 60vh;
+    right: -4vw;
+    animation: cloud4 20s alternate infinite;
+}
+.hero-section{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(35px);
+    background: linear-gradient(to left, rgb(255, 64, 0) , rgb(255, 111, 0));
+    position: absolute;
+    z-index: 4;
+}
+@keyframes cloud1{
+    0%{transform: translate(0% ,0%) skew(0deg);}
+    20%{transform: translate(30% ,5%) skew(10deg);}
+    40%{transform: translate(20% ,-2%) skew(-10deg);}
+    60%{transform: translate(-20% ,10%) skew(20deg);}
+    80%{transform: translate(40% ,-10%) skew(-40deg);}
+    100%{transform: translate(-40%, -10%) skew(20deg);}
+}
+@keyframes cloud2{
+    0%{transform: translate(10% ,5%) skew(0deg);}
+    20%{transform: translate(4% ,10%) skew(10deg);}
+    40%{transform: translate(-20% ,-5%) skew(-23deg);}
+    60%{transform: translate(-20% ,-4%) skew(10deg);}
+    80%{transform: translate(10% ,-10%) skew(-5deg);}
+    100%{transform: translate(-5%, -10%) skew(20deg);}
+}
+@keyframes cloud3{
+    0%{transform: translate(0% ,0%) skew(0deg);}
+    20%{transform: translate(40% ,10%) skew(20deg);}
+    40%{transform: translate(20% ,-20%) skew(30deg);}
+    60%{transform: translate(-20% ,-8%) skew(10deg);}
+    80%{transform: translate(10% ,-10%) skew(-10deg);}
+    100%{transform: translate(-40%, -9%) skew(6deg);}
+}
+@keyframes cloud4{
+    from{transform: translate(0px , 10%);}
+    to{transform: translate(0px , -10%) skew(0deg);} 
+}
+video{
+    width: 95vw;
+    margin-top: 4%;
+    object-fit: cover;
+    border-radius: 2%;
+    position: relative;
+    z-index: 10;
+}
+#container2{
+    margin: 10vh -40px 0px -40px;
+    /* width: 100vw; */
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+}
+#container2 div{
+    font-size: 9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    animation: loop 40s 10ms linear infinite;
+}
+#container2 div img{
+    height: 50px;
+    margin: 30px;
+}
+@keyframes loop {
+    from{transform: translate(0%);}
+    to{transform: translateX(-58%) skew(10deg);}
+}
+#container3{
+    height: 60vh;
+    margin-bottom: 10vh;
+    padding: 40px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#ball5{
+    margin: 20px  20px;
+    z-index: 1;
+    top: 10%;
+    left: 30%;
+    animation: cloud5 20s alternate infinite;
+}
+@keyframes cloud5{
+    0%{transform: translate(0% ,0%) skew(0deg);}
+    20%{transform: translate(-10% ,10%) skew(-10deg);}
+    40%{transform: translate(5% ,-5%) skew(20deg);}
+    60%{transform: translate(-5% ,-8%) skew(10deg);}
+    80%{transform: translate(10% ,-10%) skew(-20deg);}
+    100%{transform: translate(4%, -9%) skew(5deg);}
+}
+#ball6{
+    margin: 20px  20px;
+    z-index: 1;
+    top: 5%;
+    left: 25%;
+    animation: cloud6 20s alternate infinite;
+}
+@keyframes cloud6{
+    0%{transform: translate(0% ,0%) skew(5deg);}
+    20%{transform: translate(-10% ,10%) skew(2deg);}
+    40%{transform: translate(2% ,-5%) skew(3deg);}
+    60%{transform: translate(-5% ,-8%) skew(4deg);}
+    80%{transform: translate(-10% ,-5%) skew(9deg);}
+    100%{transform: translate-(4%, -9%);}
+}
+#left_part{
+    width: 55vw;
+    font-size: 4rem;
+    font-weight: 900;
+    z-index: 4;
+}
+#right_part{
+    width: 20vw;
+    align-self: end;
+}
+#right_part img{
+    height: 200px;
+    margin-bottom: 30px;
+}
+section{
+    height: 100vh;
+}
+#container4{
+    height: 90vh;
+    width: 100vw;
+    margin-left: -40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+#container4 div{
+    height: 14.29%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(124, 117, 117);
+    position: relative;
+    overflow: hidden;
+}
+#container4 div span:first-child{
+    font-size: 3.7rem;
+    font-weight: 525;
+    letter-spacing: -4px;
+    margin-left: 40px;
+}
+#container4 div span:last-child{
+    text-align: right;
+    margin-right: 40px;
+}
+#container4 div span h5{
+    font-weight: 400;
+}
+#container4 div span p{
+    font-weight: 100;
+    color: grey;
+}
+#container4 div::after{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    transition: all ease 0.2s;
+    top: -100%;
+}
+#container4 div:hover::after{
+    top: 0px;
+}
+#container5{
+    height: 55vh;
+    width: 25vw;
+    border-radius: 5%;
+    overflow: hidden;
+    position: fixed;
+    top: 25vh;
+    left: 50vw;
+    background-size:cover;
+    background-position: center; 
+    z-index: 10;
+}
+#container6{
+    height: 95vh;
+    margin-top: 100px;
+    background-color: black;
+    border-radius: 3%;
+    display: flex;
+}
+#left-div{
+    width: 50%;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn1{
+    height: 8%;
+    width: 50%;
+    padding-left: 20px;
+    color: #EFEAE3;
+    border-left: 4px solid red;
+}
+#btn2,#btn3{
+    height: 8%;
+    width: 50%;
+    padding-left: 20px;
+    color: #504B45;
+    border-left: 2px solid #504B45;
+}
+#left-div span{
+    height: 30%;
+    width: 45%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #EFEAE3;
+    margin-top: 40px;
+}
+#right-div{
+    width: 50%;
+    object-fit: fill;
+    border-radius: 3%;
+    overflow: hidden;
+    background-image: url("image/10011.webp");
+    background-size: cover;
+}
+#section2{
+    height:35vh;
+    width: 100%;
+    margin: 100px 25px;
+}
+.swiper {
+    margin-left: -65vw;
+}
+.swiper-slide {
+    height: 70%;
+  width: 15%;
+}
+.container7 {
+    height: 100%;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 25px;
+    border-left: 1px solid grey;
+}
+.container7 img{
+    margin-bottom: 20px;
+}
+#tracking-ball{
+    height: 100px;
+    width: 100px;
+    padding: 44px 32px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+    background-image: url("image/10024.png");
+    background-size: cover;
+    display: none;
+}
+#tracking-ball img{
+    height: 16px;
+}
+#blank-page{
+    height: 100vh;
+    padding: 40px;
+    position: relative;
+    z-index: 9;
+}
+#container8{
+    display: flex;
+    position: absolute;
+    top: -5vh;
+    left: -10vw;
+    animation: cloud3 3s alternate infinite;
+    z-index: -1;
+}
+#container8_8{
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    right: -15vw;
+    animation: cloud3_2 3s alternate infinite;
+    z-index: -1;
+}
+#container9{
+    margin: 0px -200px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20vh;
+    right: 0;
+}
+#container10{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20vh;
+    left: -10vw;
+}
+.hero-section2{
+    height: 600px;
+    width: 600px;
+    margin: -320px -150px -90px -150px;
+    border-radius: 50%;
+    background-color: rgb(255, 60, 0);
+    filter: blur(50px);
+}
+@keyframes cloud3{
+    from{transform: translate(0px, 0px);}
+    to{transform: translate(-30px, 3vh) rotate(10deg);}
+}
+@keyframes cloud3_2{
+    from{transform: translate(0px, 0px);}
+    to{transform: translate(-30px, 3vh) rotate(10deg);}
+}
+.hero-section3{
+    height: 350px;
+    width: 350px;;
+    margin: -90px -50px -40px 0px;
+    border-radius: 50%;
+    background-color: rgba(255, 81, 0, 0.955);
+    filter: blur(50px);
+    z-index: -1;
+    animation: cloud4 5s alternate infinite;
+}
+@keyframes cloud4{
+    from{transform: translate(0px, 0px);}
+    to{transform: translate(4vw, 0px) skew(10deg) rotate(-30deg);}
+}
+footer{
+    height: 90%;
+    width: 100%;
+    color: #EFEAE3;
+    background-color: black;
+    padding: 0px 40px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+}
+#footer1{
+    height: 50%;
+    width: 100%;
+    text-align: left;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+#footer1 span:first-child{
+    width: 120px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+#footer1 span:last-child{
+    width: 300px;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+#textarea{
+    color: #EFEAE3;
+    border: none;
+    margin-top: 40px;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+}
+#footer2{
+    height: 40%;
+    padding: 2%;
+    border-bottom: 1px solid grey;
+}
+#footer2 img{
+    width: 100%;
+    object-fit: cover;
+}
+#footer3{
+    height: 10%;
+    font-size: 1.1rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
