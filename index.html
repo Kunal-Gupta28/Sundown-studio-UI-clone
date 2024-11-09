@@ -1,202 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sundown studio</title>
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Locomotive CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body data-scroll-container data-scroll>
 
-    <!-- nav -->
+<body >
 
-    <nav class="d-flex justify-content-between ">
-        <!-- logo -->
-        <div id="logo"><a href="#"><img src="image/logo.svg"></a></div>
-        <!-- menus  -->
-        <div id="menu" class="d-flex align-items-center">
-            <span class="rounded-pill overflow-hidden d-flex justify-content-center align-items-center position-relative nav-btn1"><p>Work</p></span>
-            <span class="mx-2 rounded-pill overflow-hidden d-flex justify-content-center align-items-center position-relative nav-btn1"><p>Studio</p></span>
-            <span class="rounded-pill overflow-hidden d-flex justify-content-center align-items-center position-relative nav-btn1"><p>Contact</p></span>
-        </div>
-    </nav>
+    <!-- preloader -->
+    <!-- <section id="loader" class="vh-100 vw-100 d-flex justify-content-center align-items-center position-fixed">
+        <span>Environment</span>
+        <span>Experience</span>
+        <span>Content</span>
+     </section> -->
+
+     <div id="image_viwer"  style="display: none;"></div>
+
 
     <!-- main  -->
+    <main data-scroll-container>
 
-    <main>
-    
-        <!-- page1 -->
+        <!-- nav -->
+        <nav class="d-flex justify-content-between">
+            <!-- logo -->
+            <div id="logo"><a href="#"><img src="image/logo.svg"></a></div>
+            <!-- menus  -->
+            <div id="menu" class="d-flex align-items-center">
+                <span
+                    class="rounded-pill overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                    <p class="fw-bolder">Work</p>
+                </span>
+                <span
+                    class="mx-2 rounded-pill overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                    <p class="fw-bolder">Studio</p>
+                </span>
+                <span
+                    class="rounded-pill overflow-hidden d-flex justify-content-center align-items-center position-relative">
+                    <p class="fw-bolder">Contact</p>
+                </span>
+            </div>
+        </nav>
 
-    <section id="page1">
 
-        <div id="container1" class="d-flex justify-content-between align-items-end">
-            <div id="left-part">Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.</div>
-            <div id="right-part" class="text-end">SPACES THAT INSPIRE</div>
-         </div>    
-    </section>
+        <!-- herosection -->
+        <section id="herosection" class="px-4 d-flex justify-content-between align-items-end">
+            <div id="left-part" class="mb-4">
+                Sundown is a multi-disciplinary <br>
+                studio focused on creating <br>
+                unique, end-to-end experiences <br>
+                and environments.</div>
+            <div id="right-part" class="mb-4 text-end">
+                SPACES THAT INSPIRE</div>
+        </section>
 
-        <!-- page2 -->
+        <!-- video and marquee section-->
+        <section class="w-100 ">
 
-    <section id="page2" class="w-100">
-        <div class="hero-section rounded-circle position-absolute" id="ball1"></div>
-        <div class="hero-section rounded-circle position-absolute" id="ball2"></div>
-        <div class="hero-section rounded-circle position-absolute" id="ball3"></div>
-        <div class="hero-section rounded-circle position-absolute" id="ball4"></div>
-
-        <!-- video -->
-
-        <video  class="w-100" src="image/b7e94ef4.mp4" autoplay muted loop></video>
-
-        <!-- container2  -->
-
-        <div id="container2" class="d-flex overflow-hidden">
-            <div class="d-flex align-items-center">ENVIRONMENTS <img src="image/10024.png" alt="">
-                EXPERIENCES <img src="image/10024.png" alt="">
-                CONTENT <img src="image/10024.png" alt="">
-                ENVIRONMENTS <img src="image/10024.png" alt="">
-                EXPERIENCES <img src="image/10024.png" alt="">
-                CONTENT <img src="image/10024.png" alt="">
-                ENVIRONMENTS <img src="image/10024.png" alt="">
-                EXPERIENCES <img src="image/10024.png" alt="">
-                CONTENT <img src="image/10024.png" alt="">
-                ENVIRONMENTS <img src="image/10024.png" alt="">
-                EXPERIENCES <img src="image/10024.png" alt="">
-                CONTENT <img src="image/10024.png" alt="">
-                ENVIRONMENTS <img src="image/10024.png" alt="">
-                EXPERIENCES <img src="image/10024.png" alt="">
-                CONTENT <img src="image/10024.png" alt="">
-                ENVIRONMENTS <img src="image/10024.png" alt="">
-                EXPERIENCES <img src="image/10024.png" alt="">
-                CONTENT <img src="image/10024.png" alt=""></div>
-        </div>
-    </section>
-
-        <!-- page3 -->
-
-    <section id="page3">
-        <div id="container3" class="d-flex justify-content-between align-items-center"> 
-            <div id="left_part"><p>We are a group of design-driven, goal-focused creators, producers, and designers who believe that the details make all the difference.</p></div>
-            <div id="right_part"><img src="image/10003.webp" alt=""><p>We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas into reality. We’re here to partner with you through every step of the process and know that relationships are the most important things we build.</p> </div>
-        
-            <div class="hero-section rounded-circle position-absolute" id="ball5"></div>
-            <div class="hero-section rounded-circle position-absolute" id="ball6"></div>
-        
-        </div>
-    </section>
-
-        <!-- page4 -->
-
-    <section id="page4">
-        <section>
-            <div id="container4">
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10004.webp"><span>50th Anniversary</span><span><h5>NIKE</h5><p>Environment</p></span>   </div>
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10005.webp"><span>Air Force 12021</span><span><h5>NIKE</h5><p>Environment</p></span>   </div>
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10006.webp"><span>Makers Studio HOI</span> <span><h5>NIKE</h5><p>Experience</p></span>   </div>
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10007.webp"><span>Play New Kidvision</span><span><h5>NIKE</h5><p>Environment</p></span>   </div>
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10008.webp"><span>NYFW Popup</span><span><h5>NIKE</h5><p>Experiental</p></span>   </div>
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10009.webp"><span>SOHO NYC</span><span><h5>NIKE</h5><p>Environment</p></span>   </div>
-                <div class="images d-flex justify-content-between align-items-center overflow-hidden" data-image="image/10010.webp"><span>SOHO 2023</span><span><h5>NIKE</h5><p>Environment</p></span>   </div>
+            <!-- cloud -->
+            <div id="cloud-1" class=" position-relative">
+                <div class="ball position-absolute rounded-circle" style=" right: 0%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: -1%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 2%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 13%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 4%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: -5%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 6%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 7%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 8%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 19%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 10%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: 11%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: -12%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: -19%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: -20%;" id="ball1"></div>
+                <div class="ball position-absolute rounded-circle" style=" right: -23%;" id="ball1"></div>
             </div>
 
-            <span> All Projectts</span>
+            <!-- video -->
+            <video class="w-100 position-relative" src="image/b7e94ef4.mp4" autoplay muted loop></video>
+
+            <!-- marquee  -->
+            <div id="marquee" class="d-flex flex-nowrap">
+                <div class="d-flex align-items-center">
+                    ENVIRONMENTS <img src="image/10024.png">
+                    EXPERIENCES <img src="image/10024.png">
+                    CONTENT <img src="image/10024.png">
+                    ENVIRONMENTS <img src="image/10024.png">
+                    EXPERIENCES <img src="image/10024.png">
+                    CONTENT <img src="image/10024.png">
+                    ENVIRONMENTS <img src="image/10024.png">
+                    EXPERIENCES <img src="image/10024.png">
+                    CONTENT <img src="image/10024.png">
+                    ENVIRONMENTS <img src="image/10024.png">
+                    EXPERIENCES <img src="image/10024.png">
+                    CONTENT <img src="image/10024.png">
+                    ENVIRONMENTS <img src="image/10024.png">
+                    EXPERIENCES <img src="image/10024.png">
+                    CONTENT <img src="image/10024.png">
+                    ENVIRONMENTS <img src="image/10024.png">
+                    EXPERIENCES <img src="image/10024.png">
+                    CONTENT <img src="image/10024.png">
+                </div>
+            </div>
         </section>
-    </section>
+
+        <!-- works info section-->
+        <section id="work_info" class=" position-relative">
+
+            <div style="padding: 0px 2.5%; z-index: 1;"
+                class="w-100 d-flex justify-content-between align-items-center position-absolute ">
+                <div id="left_part">
+                    <p>We are a group of design- <br>
+                        driven, goal-focused creators, <br>
+                        producers, and designers who <br>
+                        believe that the details make <br>
+                        all the difference.</p>
+                </div>
+
+                <div id="right_part">
+                    <img src="image/10003.webp" class="w-100">
+                    <p>We love to create, we love to solve, we love to <br>
+                        collaborate, and we love to turn amazing ideas into <br>
+                        reality. We’re here to partner with you through <br>
+                        every step of the process and know that <br>
+                        relationships are the most important things we <br>
+                        build.
+                    </p>
+                </div>
+            </div>
+
+            <!-- cloud 2 -->
+            <div id="cloud-2" class=" position-relative">
+                <div class="ball rounded-circle position-absolute"
+                    style="top: 40%; left: 20%; animation: cloud5 20s alternate infinite;"></div>
+                <div class="ball rounded-circle position-absolute"
+                    style="top: 40%; left: 20%; animation: cloud6 20s alternate infinite;"></div>
+            </div>
+
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section id="featured_project" class="position-relative">
+
+            <div class="mb-5 d-flex align-items-center">
+                <img src="/image/favicon.png" width="5px" height="5px" class="me-2">
+                <p class="mb-0">
+                    FEATURED PROJECTS
+                </p>
+            </div>
+
+            <div id="all_projects">
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10004.webp"><span>50th Anniversary</span><span>
+                        <h5>NIKE</h5>
+                        <p>Environment</p>
+                    </span> </div>
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10005.webp"><span>Air Force 12021</span><span>
+                        <h5>NIKE</h5>
+                        <p>Environment</p>
+                    </span> </div>
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10006.webp"><span>Makers Studio HOI</span> <span>
+                        <h5>NIKE</h5>
+                        <p>Experience</p>
+                    </span> </div>
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10007.webp"><span>Play New Kidvision</span><span>
+                        <h5>NIKE</h5>
+                        <p>Environment</p>
+                    </span> </div>
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10008.webp"><span>NYFW Popup</span><span>
+                        <h5>NIKE</h5>
+                        <p>Experiental</p>
+                    </span> </div>
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10009.webp"><span>SOHO NYC</span><span>
+                        <h5>NIKE</h5>
+                        <p>Environment</p>
+                    </span> </div>
+                <div class="images d-flex justify-content-between align-items-center overflow-hidden"
+                    data-image="./image/10010.webp"><span>SOHO 2023</span><span>
+                        <h5>NIKE</h5>
+                        <p>Environment</p>
+                    </span> </div>
+            </div>
+
+            <span style="border: 1px solid #917e78dc; width: 8%;" class="py-2 px-2 d-flex justify-content-center align-content-center rounded-pill position-relative overflow-hidden">
+                All Projectts ->
+            </span>
+        </section>
+
 
         <!-- page5 -->
-
-    <section id="page5">
-        <div id="container6" class="d-flex">
+        <section id="page5" class="d-flex">
             <div id="left-div" class="w-50 d-flex flex-column justify-content-center align-items-center">
                 <div id="btn1" class="w-50">Design</div>
                 <div id="btn2" class="w-50">Project</div>
                 <div id="btn3" class="w-50">Execution</div>
-                <span>Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.</span>
+                <span>
+                    Our team works with our clients to refine an idea and concept into an executable design. We create
+                    a final design that encompasses the brand narrative to bring stories to life and provide end-to-end
+                    design solutions from concept, design, and architectural drawings to 3D renderings.</span>
             </div>
             <div id="right-div" class="w-50 overflow-hidden"></div>
-        </div>
-    </section>
+        </section>
 
         <!-- page6 -->
 
-    <section id="page6">
-        <div id="section2">
-                    
+        <section id="page6">
+
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><div class="container7"><img src="image/10014.svg" alt=""><p>Retained Production support across retail and events in NY, CHI, LA. Creative Design, Design Management, Production/Project Management, and execution of work from concept to installation across the Country.</p></div></div>
-                  <div class="swiper-slide"><div class="container7"><img src="image/10015.svg" alt=""><p>Creative Concepting, Design, Design Management, Project Management, and execution of work from concept to installation across the Country. Cross functional communication and management of third party partners.</p></div></div>
-                  <div class="swiper-slide"><div class="container7"><img src="image/10016.svg" alt=""><p>Production and design along with install oversight and execution support for the SoHo store opening on Broadway St, New York. Also working on creative and production work for a new store opening in Glendale, California.</p></div></div>
-                  <div class="swiper-slide"><div class="container7"><img src="image/10017.svg" alt=""><p>Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 57th St, New York, including activations in Women’s, Men’s and Kid’s zones. Thirty-five (35) additional smaller take-downs in Nordstrom stores across the US. Concept design for Holiday boot customization events in stores across winter 2022.</p></div></div>
-                  <div class="swiper-slide"><div class="container7"><img src="image/10018.svg" alt=""><p>Creative, Design, and Production Partner for 2023 CES. Scope Included creation of Branding Identity, Assets, and Digital Content, Design, Production design, Production oversight and Installation of client activations for IBM, Delta, Instacart, and more.</p></div></div>
-                  <div class="swiper-slide"><div class="container7"><img src="image/10019.svg" alt=""><p>Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. In Partnership with B-Reel scope including creation of Final Design, Design Assets, 3D Renders, Production design, Production/Partner oversight and creation of a two (2) story pop-up for Afterpay’s clients such as Crocs, JD Sports, Container Store, & Revolve.</p></div></div>
+                    <div class="swiper-slide">
+                        <div class="container7"><img src="image/10014.svg" alt="">
+                            <p>Retained Production support across retail and events in NY, CHI, LA. Creative Design,
+                                Design Management, Production/Project Management, and execution of work from concept to
+                                installation across the Country.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container7"><img src="image/10015.svg" alt="">
+                            <p>Creative Concepting, Design, Design Management, Project Management, and execution of work
+                                from concept to installation across the Country. Cross functional communication and
+                                management of third party partners.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container7"><img src="image/10016.svg" alt="">
+                            <p>Production and design along with install oversight and execution support for the SoHo
+                                store opening on Broadway St, New York. Also working on creative and production work for
+                                a new store opening in Glendale, California.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container7"><img src="image/10017.svg" alt="">
+                            <p>Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 57th St, New
+                                York, including activations in Women’s, Men’s and Kid’s zones. Thirty-five (35)
+                                additional smaller take-downs in Nordstrom stores across the US. Concept design for
+                                Holiday boot customization events in stores across winter 2022.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container7"><img src="image/10018.svg" alt="">
+                            <p>Creative, Design, and Production Partner for 2023 CES. Scope Included creation of
+                                Branding Identity, Assets, and Digital Content, Design, Production design, Production
+                                oversight and Installation of client activations for IBM, Delta, Instacart, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container7"><img src="image/10019.svg" alt="">
+                            <p>Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. In
+                                Partnership with B-Reel scope including creation of Final Design, Design Assets, 3D
+                                Renders, Production design, Production/Partner oversight and creation of a two (2) story
+                                pop-up for Afterpay’s clients such as Crocs, JD Sports, Container Store, & Revolve.</p>
+                        </div>
+                    </div>
 
                 </div>
-              </div>
-            
-              <div id="tracking-ball" class="rounded-circle"><img src="image/10020.svg" alt=""></div>
-            
-        </div>
-    </section>    
+            </div>
 
-        <!-- blank-pagesection -->
+            <div id="tracking-ball" class="rounded-circle"><img src="image/10020.svg" alt=""></div>
 
-    <section id="blank-page"></section>
-</main>
-
-    <div id="container5" class="overflow-hidden"></div> 
-
-
-        <!-- footer -->
-
-    <footer>
-        <section id="container8" class="d-flex ">
-            <div class="hero-section2 rounded-circle position-absolute" id="ball7"></div>
-            <div class="hero-section2 rounded-circle position-absolute" id="ball8"></div>
-            <div class="hero-section2 rounded-circle position-absolute" id="ball9"></div>
-            <div class="hero-section2 rounded-circle position-absolute" id="ball10"></div>
         </section>
-        <div id="container8_8" class="d-flex ">
-            <div class="hero-section2 rounded-circle position-absolute" id="ball11"></div>
-            <div class="hero-section2 rounded-circle position-absolute" id="ball12"></div>
-            <div class="hero-section2 rounded-circle position-absolute" id="ball13"></div>
-            <div class="hero-section2 rounded-circle position-absolute" id="ball14"></div>
-        </div>
-        <div id="container9" class="d-flex flex-column">
-            <div class="hero-section3 rounded-circle position-absolute" id="ball15"></div>
-            <div class="hero-section3 rounded-circle position-absolute" id="ball16"></div>
-            <div class="hero-section3 rounded-circle position-absolute" id="ball17"></div>
-        </div>
-        <div id="container10" class="d-flex flex-column">
-            <div class="hero-section3 rounded-circle position-absolute" id="ball15"></div>
-            <div class="hero-section3 rounded-circle position-absolute" id="ball16"></div>
-            <div class="hero-section3 rounded-circle position-absolute" id="ball17"></div>
-        </div>
-        <div id="footer1" class="h-50 w-100 d-flex justify-content-between"><span>Work Studio Contact</span> <span>Get industry insights and creative inspiration straight to your inbox. <textarea class="bg-transparent border-0" placeholder="Email address" id="textarea" cols="55" rows="4"></textarea></span></div>
-        <div id="footer2"><img src="image/10021.svg" alt=""></div>
-        <div id="footer3" class="d-flex justify-content-between align-items-center">
-            <span>Copyright © Sundown Studio</span>
-            <span><img src="image/10022.svg" alt="">Brooklyn, NY</span>
-            <span>Instagram</span>
-            <span>Linkedin</span>
-        </div>
+
+        
+        <!-- blank-pagesection -->
+    
+        <section id="blank-page"></section>
+        
+    </main>
+
+
+
+            <!-- footer -->
+    <footer class="vh-100 vw-100 position-relative" >
+        <section id="cloud-3" class="vh-100 vw-100 d-flex justify-content-evenly position-absolute" style="z-index: 0; top: 0%; left: 0%;" >
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -15%; transform: translateY(25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -15%; transform: translateY(-15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -15%; transform: translateY(15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -15%; transform: translateY(35%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -15%; transform: translateY(45%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -15%; transform: translateY(65%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 0%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 0%; transform: translateY(-5%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 0%;"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(45%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(5%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(0%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(-5%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(-20%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: -5%; transform: translateY(-40%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 10%; transform: translateY(-35%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 10%; transform: translateY(-15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 10%; transform: translateY(0%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 10%; transform: translateY(10%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 10%; transform: translateY(25%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 20%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 20%; transform: translateY(-15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 20%; transform: translateY(-5%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 30%; transform: translateY(-35%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 40%; transform: translateY(-35%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 50%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 50%; transform: translateY(-15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 50%; transform: translateY(0%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 60%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 60%; transform: translateY(0%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 60%; transform: translateY(5%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 60%; transform: translateY(-25%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 70%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 70%; transform: translateY(0%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 70%; transform: translateY(15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 70%; transform: translateY(30%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 80%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 80%; transform: translateY(-5%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 80%; transform: translateY(0%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 80%; transform: translateY(25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 80%; transform: translateY(45%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 90%; transform: translateY(-25%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 90%; transform: translateY(-5%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 90%; transform: translateY(0%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 90%; transform: translateY(15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 90%; transform: translateY(45%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 90%; transform: translateY(75%);"></div>
+
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 100%; transform: translateY(15%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 100%; transform: translateY(35%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 100%; transform: translateY(45%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 100%; transform: translateY(65%);"></div>
+            <div class="cloud-3 rounded-circle position-absolute" style=" top:0%; left: 100%; transform: translateY(85%);"></div>
+        </section>
+
+        <section class="vh-100 vw-100 position-absolute" style="z-index: 1; top: 0%; left: 0%;">
+            <section id="section1" class="h-50 w-100 d-flex justify-content-between">
+                <span >Work Studio Contact</span>
+                <span>
+                    Get industry insights and creative inspiration straight to your inbox. 
+                    <textarea
+                        class="bg-transparent border-0" placeholder="Email address" id="textarea" cols="55"
+                        rows="4">
+                    </textarea>
+                </span>
+            </section>
+    
+            <!-- sundown svg -->
+            <section id="section2"><img src="image/10021.svg" class="w-100 object-fit-cover"></section>
+            <section id="section3" class="fw-lighter d-flex justify-content-between align-items-center px-5">
+                <span>Copyright © Sundown Studio</span>
+                <span><img src="image/10022.svg" alt="">Brooklyn, NY</span>
+                <span>Instagram</span>
+                <span>Linkedin</span>
+            </section>
+        </section>
     </footer>
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js.js"></script>
+    <!-- locomotive cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scrollTrigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swipper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="app.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-
